@@ -24,8 +24,8 @@ const App = () => {
 
   return (
     <NavigationContainer>
-    <Stack.Navigator>
-      <Stack.Screen name="Home" component={HomeScreen} />
+    <Stack.Navigator initialRouteName="Home">
+      <Stack.Screen name="Home" options={{ title: 'WhatsApp' }} component={HomeScreen} />
       <Stack.Screen name="ChatList" component={ChatListScreen} />
       <Stack.Screen name="Chat" component={ChatScreen} />
     </Stack.Navigator>
