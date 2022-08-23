@@ -1,12 +1,10 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import Icon from 'react-native-vector-icons/FontAwesome';
+import HomePage from '../components/Home/HomePage'
+
 const HomeScreen = () => {
   return (
-    <View>
-      <Text>HomeScreen</Text>
-      <Icon  name="instagram" size={28} color="#f9524d" />
-    </View>
+    <HomePage/>
   )
 }
 
