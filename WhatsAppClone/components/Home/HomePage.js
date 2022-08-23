@@ -3,7 +3,7 @@ import React from 'react';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import Header from './Header';
-import ChatList from './ChatList';
+import ChatList from './ChatList/ChatList';
 const HomePage = () => {
   return (
     <SafeAreaView>
