@@ -5,6 +5,7 @@ import IconFontisto from 'react-native-vector-icons/Fontisto';
 const Header = () => {
   return (
     <View style={styles.container}>
+    <View style={styles.topWrapper} >
       <View style={styles.titleWrapper}>
         <Text style={styles.titleText}>WhatsApp</Text>
       </View>
@@ -12,6 +13,8 @@ const Header = () => {
         <IconFontisto style={styles.searchIcon} name="search" size={18} color="white" />
         <IconEntypo name="dots-three-vertical" size={18} color="white" />
       </View>
+    </View>
+    <Text style={styles.chatListTitle}>CHATS</Text>
     </View>
   );
 };
@@ -21,10 +24,14 @@ export default Header;
 const styles = StyleSheet.create({
     container:{
         backgroundColor:"#07b93c",
-        flexDirection:"row",
-        height:60,
+        height:74,
+        width:"100%",
+        
+    },
+    topWrapper:{
         alignItems:"center",
-        width:"100%"
+        flexDirection:"row",
+        height:40,
     },
     titleText:{
         color:"white",
@@ -43,6 +50,15 @@ const styles = StyleSheet.create({
     },
     searchIcon:{
         left:-16
+    },
+    chatListTitle:{
+        color:"white",
+        fontWeight:"800",
+        fontSize:14,
+        borderBottomColor:"white",
+        borderBottomWidth:2,
+        textAlign:"center",
+        paddingBottom:8
     }
     
 });
