@@ -1,24 +1,34 @@
-import {Image, StyleSheet, Text, View} from 'react-native';
+import {Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import React from 'react';
-
+import { useNavigation } from "@react-navigation/native";
 const ChatListItem = ({chat}) => {
-  const {id,receiver,messages} = chat
- 
+  const {id, receiver, messages} = chat;
+  const navigation=useNavigation()
   return (
-    <View style={styles.container}>
-      <View style={styles.imageContainer}>
-      <Image
-      style={styles.image}
-      source={{
-        uri:receiver?.profileImgUrl
-      }}
-      />
-    </View>
-      <View style={styles.titleAndTextWrapper}>
-        <Text style={styles.titleText}>{receiver?.firstName} {receiver?.lastName}</Text>
-        <Text style={styles.msgText}>{messages[messages?.length-1]?.text}</Text>
+    <TouchableOpacity onPress={() => {
+      navigation.navigate('Chat',{
+        receiver,messages
+      })
+      }}>
+      <View style={styles.container}>
+        <View style={styles.imageContainer}>
+          <Image
+            style={styles.image}
+            source={{
+              uri: receiver?.profileImgUrl,
+            }}
+          />
+        </View>
+        <View style={styles.titleAndTextWrapper}>
+          <Text style={styles.titleText}>
+            {receiver?.firstName} {receiver?.lastName}
+          </Text>
+          <Text style={styles.msgText}>
+            {messages[messages?.length - 1]?.text}
+          </Text>
+        </View>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 };
 
@@ -31,8 +41,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     paddingTop: 16,
     paddingLeft: 16,
-    paddingBottom:16,
-    alignItems:"center"
+    paddingBottom: 16,
+    alignItems: 'center',
   },
   imageWrapper: {},
   titleAndTextWrapper: {
@@ -40,11 +50,11 @@ const styles = StyleSheet.create({
   },
   titleText: {
     fontWeight: '800',
-    color:"black",
-    fontSize:16
+    color: 'black',
+    fontSize: 16,
   },
   msgText: {
-    fontSize:14
+    fontSize: 14,
   },
   imageContainer: {
     width: 50,
@@ -53,7 +63,6 @@ const styles = StyleSheet.create({
     overflow: 'hidden',
     borderWidth: 1,
     borderColor: 'gray',
-    
   },
   image: {
     width: '100%',
