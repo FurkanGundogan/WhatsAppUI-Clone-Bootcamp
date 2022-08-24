@@ -1,20 +1,22 @@
 import {Image, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 
-const ChatListItem = () => {
+const ChatListItem = ({chat}) => {
+  const {id,receiver,messages} = chat
+ 
   return (
     <View style={styles.container}>
       <View style={styles.imageContainer}>
       <Image
       style={styles.image}
       source={{
-        uri:""
+        uri:receiver?.profileImgUrl
       }}
       />
     </View>
       <View style={styles.titleAndTextWrapper}>
-        <Text style={styles.titleText}>UserName</Text>
-        <Text style={styles.msgText}>Last Text</Text>
+        <Text style={styles.titleText}>{receiver?.firstName} {receiver?.lastName}</Text>
+        <Text style={styles.msgText}>{messages[messages?.length-1]?.text}</Text>
       </View>
     </View>
   );
@@ -29,7 +31,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     paddingTop: 16,
     paddingLeft: 16,
-    paddingBottom:16
+    paddingBottom:16,
+    alignItems:"center"
   },
   imageWrapper: {},
   titleAndTextWrapper: {
@@ -37,15 +40,19 @@ const styles = StyleSheet.create({
   },
   titleText: {
     fontWeight: '800',
+    color:"black",
+    fontSize:16
   },
-  msgText: {},
+  msgText: {
+    fontSize:14
+  },
   imageContainer: {
-    width: 40,
-    height: 40,
-    borderRadius: 25,
+    width: 50,
+    height: 50,
+    borderRadius: 30,
     overflow: 'hidden',
     borderWidth: 1,
-    borderColor: 'black',
+    borderColor: 'gray',
     
   },
   image: {

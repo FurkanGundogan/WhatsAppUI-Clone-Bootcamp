@@ -1,4 +1,4 @@
-const chatList = [
+export const chatList = [
   {
     id: 'a1',
     receiver: {
@@ -61,25 +61,6 @@ const chatList = [
     ],
   },
   {
-    id: 'a3',
-    receiver: {
-      id: 'u3',
-      firstName: 'Edward',
-      lastName: 'Norton',
-      profileImgUrl: '',
-    },
-    messages: [
-      {
-        text: 'Hello!',
-        datetime: '2022-08-21T16:34:22.859Z',
-      },
-      {
-        text: 'How are you?',
-        datetime: '2022-08-21T16:35:22.859Z',
-      },
-    ],
-  },
-  {
     id: 'a4',
     receiver: {
       id: 'u4',
@@ -108,7 +89,7 @@ const chatList = [
       id: 'u5',
       firstName: 'James',
       lastName: 'Franco',
-      profileImgUrl: '',
+      profileImgUrl: 'https://i4.hurimg.com/i/hurriyet/75/770x0/61c437da4e3fe014f0273aa2.jpg',
     },
     messages: [
       {
@@ -123,14 +104,17 @@ const chatList = [
       id: 'u6',
       firstName: 'Naomi',
       lastName: 'Watts',
-      profileImgUrl: 'https://www.imdb.com/name/nm0915208/mediaviewer/rm2785845760?ref_=nm_ov_ph',
+      profileImgUrl: 'https://tr.web.img4.acsta.net/c_310_420/pictures/15/07/22/11/30/226037.jpg',
     },
     messages: [
+      {
+        text: "Hey",
+        datetime: '2022-08-21T16:34:22.859Z',
+      },
       {
         text: "What's up?",
         datetime: '2022-08-21T16:34:22.859Z',
       },
-      ,
     ],
   },
   {
@@ -148,6 +132,81 @@ const chatList = [
       },
       {
         text: 'Thanks.',
+        datetime: '2022-08-21T16:35:22.859Z',
+      },
+    ],
+  },
+  {
+    id: 'a8',
+    receiver: {
+      id: 'u8',
+      firstName: 'Brad',
+      lastName: 'Pitt',
+      profileImgUrl: 'https://m.media-amazon.com/images/M/MV5BMTgyMjI3ODA3Nl5BMl5BanBnXkFtZTcwNzY2MDYxOQ@@._V1_UX214_CR0,0,214,317_AL_.jpg',
+    },
+    messages: [
+      {
+        text: 'Hey',
+        datetime: '2022-08-21T16:34:22.859Z',
+      },
+      {
+        text: "What's up Buddy",
+        datetime: '2022-08-21T16:35:22.859Z',
+      },
+    ],
+  },
+  {
+    id: 'a9',
+    receiver: {
+      id: 'u9',
+      firstName: 'Jason',
+      lastName: 'Statham',
+      profileImgUrl: 'https://tr.web.img3.acsta.net/pictures/19/07/31/17/35/5396784.jpg',
+    },
+    messages: [
+      {
+        text: 'Okay',
+        datetime: '2022-08-21T16:34:22.859Z',
+      },
+      {
+        text: "See you Mate",
+        datetime: '2022-08-21T16:35:22.859Z',
+      },
+    ],
+  },{
+    id: 'a9',
+    receiver: {
+      id: 'u9',
+      firstName: 'Jason2',
+      lastName: 'Statham',
+      profileImgUrl: 'https://tr.web.img3.acsta.net/pictures/19/07/31/17/35/5396784.jpg',
+    },
+    messages: [
+      {
+        text: 'Okay',
+        datetime: '2022-08-21T16:34:22.859Z',
+      },
+      {
+        text: "See you Mate",
+        datetime: '2022-08-21T16:35:22.859Z',
+      },
+    ],
+  },
+  {
+    id: 'a9',
+    receiver: {
+      id: 'u9',
+      firstName: 'Jason3',
+      lastName: 'Statham',
+      profileImgUrl: 'https://tr.web.img3.acsta.net/pictures/19/07/31/17/35/5396784.jpg',
+    },
+    messages: [
+      {
+        text: 'Okay',
+        datetime: '2022-08-21T16:34:22.859Z',
+      },
+      {
+        text: "See you Mate",
         datetime: '2022-08-21T16:35:22.859Z',
       },
     ],
