@@ -22,7 +22,7 @@ const App = () => {
     <NavigationContainer>
     <Stack.Navigator initialRouteName="Home">
       <Stack.Screen name="Home" options={{ title: 'WhatsApp',headerShown:false }} component={HomeScreen} />
-      <Stack.Screen name="Chat" component={ChatScreen} />
+      <Stack.Screen name="Chat" options={{ title: 'Chat',headerShown:false }} component={ChatScreen} />
     </Stack.Navigator>
   </NavigationContainer>
   );

@@ -11,8 +11,6 @@ const HomePage = () => {
       <ScrollView>
         <ChatList/>
       </ScrollView>
-      <Text>HomePage</Text>
-      <Icon name="instagram" size={28} color="#f9524d" />
     </SafeAreaView>
   );
 };

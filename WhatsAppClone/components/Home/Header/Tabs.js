@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 import {tabs} from '../../../assets/ChatsData';
 const Tabs = () => {
   const [selected, setselected] = useState('CHATS');
-  console.log(tabs)
+  
   return (
     <View style={styles.container}>
       {tabs &&

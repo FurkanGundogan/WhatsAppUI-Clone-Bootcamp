@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
     paddingBottom: 16,
     alignItems: 'center',
   },
-  imageWrapper: {},
+  
   titleWrapper:{
     flexDirection:"row",
   },
