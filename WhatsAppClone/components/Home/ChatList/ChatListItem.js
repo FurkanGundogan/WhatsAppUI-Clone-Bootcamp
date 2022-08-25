@@ -20,9 +20,17 @@ const ChatListItem = ({chat}) => {
           />
         </View>
         <View style={styles.titleAndTextWrapper}>
+            <View style={styles.titleWrapper}>
+
+            
           <Text style={styles.titleText}>
             {receiver?.firstName} {receiver?.lastName}
           </Text>
+          <Text style={styles.titleTime}>
+          {new Date (messages[messages?.length - 1]?.datetime).getHours()}:
+          {new Date (messages[messages?.length - 1]?.datetime).getMinutes()}
+          </Text>
+          </View>
           <Text style={styles.msgText}>
             {messages[messages?.length - 1]?.text}
           </Text>
@@ -45,13 +53,22 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   imageWrapper: {},
+  titleWrapper:{
+    flexDirection:"row",
+  },
   titleAndTextWrapper: {
     marginLeft: 16,
+    width:"100%"
   },
   titleText: {
     fontWeight: '800',
     color: 'black',
     fontSize: 16,
+    flex:1
+  },
+  titleTime:{
+    flex:1,
+    right:-48
   },
   msgText: {
     fontSize: 14,

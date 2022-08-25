@@ -56,7 +56,7 @@ export const chatList = [
       },
       {
         text: 'How are you?',
-        datetime: '2022-08-21T16:35:22.859Z',
+        datetime: '2022-08-21T18:25:22.859Z',
       },
     ],
   },
@@ -79,7 +79,7 @@ export const chatList = [
       },
       {
         text: ':) :) :)',
-        datetime: '2022-08-21T16:36:22.859Z',
+        datetime: '2022-08-21T10:30:22.859Z',
       },
     ],
   },
@@ -113,7 +113,7 @@ export const chatList = [
       },
       {
         text: "What's up?",
-        datetime: '2022-08-21T16:34:22.859Z',
+        datetime: '2022-08-21T12:34:22.859Z',
       },
     ],
   },
@@ -132,7 +132,7 @@ export const chatList = [
       },
       {
         text: 'Thanks.',
-        datetime: '2022-08-21T16:35:22.859Z',
+        datetime: '2022-08-21T11:35:22.859Z',
       },
     ],
   },
@@ -151,7 +151,7 @@ export const chatList = [
       },
       {
         text: "See you Mate",
-        datetime: '2022-08-21T16:35:22.859Z',
+        datetime: '2022-08-21T11:55:22.859Z',
       },
     ],
   },
