@@ -1,3 +1,6 @@
+export const tabs = [
+  "CHATS","STORIES","CALLS"
+]
 export const chatList = [
   {
     id: 'a1',

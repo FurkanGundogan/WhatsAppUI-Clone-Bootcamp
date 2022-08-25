@@ -2,6 +2,7 @@ import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import IconEntypo from 'react-native-vector-icons/Entypo';
 import IconFontisto from 'react-native-vector-icons/Fontisto';
+import Tabs from './Tabs';
 const Header = () => {
   return (
     <View style={styles.container}>
@@ -14,7 +15,7 @@ const Header = () => {
         <IconEntypo name="dots-three-vertical" size={18} color="white" />
       </View>
     </View>
-    <Text style={styles.chatListTitle}>CHATS</Text>
+    <Tabs/>
     </View>
   );
 };
@@ -51,14 +52,6 @@ const styles = StyleSheet.create({
     searchIcon:{
         left:-16
     },
-    chatListTitle:{
-        color:"white",
-        fontWeight:"800",
-        fontSize:14,
-        borderBottomColor:"white",
-        borderBottomWidth:2,
-        textAlign:"center",
-        paddingBottom:8
-    }
+   
     
 });
