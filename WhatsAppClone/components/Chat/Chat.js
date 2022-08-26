@@ -12,10 +12,8 @@ const Chat = () => {
   return (
     <View style={styles.container}>
       <Header receiver={receiver} />
-      <View style={styles.messageAreaWrapper}>
-        <MessageArea/>
-        <MessageInputArea/>
-      </View>
+      <MessageArea messages={messages} style={styles.messageArea} />
+      <MessageInputArea style={styles.messageInputArea} />
     </View>
   );
 };
@@ -24,12 +22,7 @@ export default Chat;
 
 const styles = StyleSheet.create({
   container: {
-    flex:1,
-    backgroundColor: 'white',
-    paddingBottom: Platform.OS === 'android' ? 50 : 0,
-  },
-  messageAreaWrapper:{
-    flex:1
-  },
-  
+    flex: 1,
+    paddingBottom: Platform.OS === 'android' ? 58 : 0,
+  }
 });

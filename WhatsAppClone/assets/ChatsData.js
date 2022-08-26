@@ -35,7 +35,11 @@ export const chatList = [
         datetime: '2022-08-21T16:33:22.859Z',
       },
       {
-        text: 'I have good news. Call me ASAP!',
+        text: 'I have good news',
+        datetime: '2022-08-21T16:34:22.859Z',
+      },
+      {
+        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci placeat officia voluptas voluptatibus, maiores velit natus ea nesciunt perferendis architecto repudiandae minus est! Accusantium modi facere dolorem repudiandae? Ipsa consequatur alias necessitatibus? Sapiente, et ullam quisquam debitis itaque Adipisci placeat officia voluptas voluptatibus, maiores velit natus ea nesciunt perferendis architecto repudiandae minus est! Accusantium modi facere dolorem repudiandae? Ipsa consequatur alias necessitatibus? Sapiente, et ullam quisquam debitis itaque voluptatum vero distinctio neque consequuntur voluptate sed!',
         datetime: '2022-08-21T16:34:22.859Z',
       },
       {
